@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interleaved Todo Cards</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+
+  <body class="bg-sky-300 min-h-screen overflow-hidden">
+    <div class="flex items-center justify-center w-[960px] h-[720px] mx-auto">
+      <!-- Front / Dark Card -->
+      <div
+        id="dark-card"
+        class=" -10px w-[615px] h-[398px] rounded-2xl overflow-hidden shadow-2xl bg-[#11111f] "
+      >
+        <div class="relative w-full h-full">
+          
+          <!-- Sun Icon -->
+          <button type="button">
+            <svg  id="moon-icon" class="absolute top-3 right-4 z-50 cursor-pointer text-white" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="20px" width="20px" xmlns="http://www.w3.org/2000/svg"><path d="M264 480A232 232 0 0 1 32 248c0-94 54-178.28 137.61-214.67a16 16 0 0 1 21.06 21.06C181.07 76.43 176 104.66 176 136c0 110.28 89.72 200 200 200 31.34 0 59.57-5.07 81.61-14.67a16 16 0 0 1 21.06 21.06C442.28 426 358 480 264 480z"></path></svg>
+          </button>
+
+          <!-- Header Image -->
+          <div class="h-[115px] relative -top-10">
+            <img class="w-full h-full object-cover" src="forest.jpg" />
+          </div>
+
+          <!-- Bottom Area -->
+          <div id="dark-bottom" class="h-[283px] bg-[#11111f]"></div>
+
+          <!-- Todo Panel -->
+          <div
+            id="dark-todo"
+            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[250px] h-[310px] rounded-xl bg-[#24263a] shadow-2xl p-3 border border-white/10"
+          >
+            <h2
+              id="dark-todo-header"
+              class="text-white font-bold text-xl absolute -top-9 left-0"
+            >
+              TODO
+            </h2>
+               <div
+            class="done-todo absolute right-2 bottom-50 rounded-full  text-white py-1 px-3 text-smm bg-blue-600">
+      </div>
+            <input
+              id="dark-input-box"
+              class="w-full h-6 rounded-md border border-white/20 bg-transparent px-2 text-[9px] text-white outline-none"
+              placeholder="Create a new todo..."
+            />
+
+            <div
+              id="dark-list"
+              class="mt-3 space-y-2 text-[9px] text-white"
+            ></div>
+
+            <p
+              id="dark-footer"
+              class="absolute right-3 text-[8px] text-white/60"
+            ></p>
+            <button
+              id="submit-btn"
+              class="absolute right-5 bottom-1 rounded-lg bg-blue-500 text-white py-1 px-3 text-sm hover:bg-blue-600"
+            >
+              submit
+            </button>
+            <button
+              id="done-btn"
+              class="absolute bottom w-1/2 rounded-lg bg-blue-500 text-white py-1 px-3 text-sm"
+            >
+              done
+            </button>
+            <!--delete button-->
+            <button
+              id="delete-btn"
+              class="absolute left-5 bottom-1 rounded-full text-white py-1 px-3 text-sm"
+            >
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 448 512"
+                height="20px"
+                width="20px"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M135.2 17.7C140.6 6.8 151.7 0 163.8 0L284.2 0c12.1 0 23.2 6.8 28.6 17.7L320 32l96 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 96C14.3 96 0 81.7 0 64S14.3 32 32 32l96 0 7.2-14.3zM32 128l384 0 0 320c0 35.3-28.7 64-64 64L96 512c-35.3 0-64-28.7-64-64l0-320zm96 64c-8.8 0-16 7.2-16 16l0 224c0 8.8 7.2 16 16 16s16-7.2 16-16l0-224c0-8.8-7.2-16-16-16zm96 0c-8.8 0-16 7.2-16 16l0 224c0 8.8 7.2 16 16 16s16-7.2 16-16l0-224c0-8.8-7.2-16-16-16zm96 0c-8.8 0-16 7.2-16 16l0 224c0 8.8 7.2 16 16 16s16-7.2 16-16l0-224c0-8.8-7.2-16-16-16z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+         
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
