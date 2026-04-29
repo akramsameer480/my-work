@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+
+  <body class="bg-orange-200">
+    <div class="mx-auto flex items-center justify-center min-h-screen">
+      <div
+        class="bg-white h-[450px] w-[550px] rounded-xl flex flex-col p-6 gap-6 relative"
+      >
+        <!-- Title -->
+        <h1 class="font-bold text-black text-center text-2xl">
+          Which Planet Is Known As The Red Planet 
+        </h1>
+        <h2
+          class="font-semibold text-black text-center absolute bottom-100 mb-7"
+        >
+          Question 3 of 5
+        </h2>
+
+        <!-- Answers container -->
+         <button id="btn1"
+          class="w-full bg-[#E6DED1] border border-[#D6CFC2] text-gray-700 py-4 px-4 rounded-xl text-lg font-medium"
+        >
+            Earth
+        </button>
+    <button id="btn2"
+          class="w-full bg-[#E6DED1] border border-[#D6CFC2] text-gray-700 py-4 px-4 rounded-xl text-lg font-medium"
+        >
+            Venus
+        </button>
+<button id="btn3"
+          class="w-full bg-[#E6DED1] border border-[#D6CFC2] text-gray-700 py-4 px-4 rounded-xl text-lg font-medium"
+        >
+            Mars
+        </button>
+              <button id="btn4"
+          class="w-full bg-[#E6DED1] border border-[#D6CFC2] text-gray-700 py-4 px-4 rounded-xl text-lg font-medium"
+        >
+          Jupiter
+        </button>
+  
+        <div class="w-full bg-gray-300 rounded-full h-4">
+          <div class="h-4 rounded-full w-[50%] bg-orange-500" id="progress-bar">
+
+          </div>
+        </div>
+                                        <h3 id="score-pannel"></h3>
+
+      </div>
+    </div>
+        <a href="q4.html" target="_self"> <button  class="bg-blue-500 text-white py-2 px-4 rounded-xl absolute bottom-6 left-1/2 -translate-x-[50%]" id="submit-btn">Submit</button></a>
+
+    <script src="q3.js"></script>
+  </body>
+</html>
